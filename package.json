@@ -1,0 +1,15 @@
+{
+  "name": "costa-rican-bills-alexa-skill",
+  "version": "0.0.1",
+  "description": "An alexa skill's lambda functions to return open bills for costa rican services.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HungryMinds/costa-rica-public-services-api.git"
+  },
+  "author": "Javier Escalante, Leonardo Mendoza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HungryMinds/costa-rica-public-services-api/issues"
+  },
+  "homepage": "https://github.com/HungryMinds/costa-rica-public-services-api#readme"
+}
