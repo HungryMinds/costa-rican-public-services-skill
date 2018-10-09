@@ -1,4 +1,5 @@
 'use strict';
+const fetch = require ('node-fetch')
 
 module.exports.lightBill = async (event, context) => {
   let niseNumber = '27894731' // Hardcoded for testing, this one currently owes 3 months.

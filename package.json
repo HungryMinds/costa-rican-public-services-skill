@@ -11,5 +11,8 @@
   "bugs": {
     "url": "https://github.com/HungryMinds/costa-rica-public-services-api/issues"
   },
-  "homepage": "https://github.com/HungryMinds/costa-rica-public-services-api#readme"
+  "homepage": "https://github.com/HungryMinds/costa-rica-public-services-api#readme",
+  "dependencies": {
+    "node-fetch": "^2.2.0"
+  }
 }
