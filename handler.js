@@ -3,6 +3,7 @@
 module.exports.lightBill = async (event, context) => {
   let niseNumber = '27894731' // Hardcoded for testing, this one currently owes 3 months.
   const getLightBillsFromAPI = function(nise) {
+    let APIResponse
     const baseUrl = 'https://agenciavirtual.cnfl.go.cr/cnfl/resources/proxy/pendientesAbierta/'
     try {
       APIResponse = fetch(baseUrl + nise)
@@ -13,7 +14,7 @@ module.exports.lightBill = async (event, context) => {
   }
   const parseAPIResponsetoText = function() {
     const apiResponse = getLightBillsFromAPI(niseNumber)
-    const totalBills = apiResponse.lenght
+    const totalBills = apiResponse.length
     let textResponse
     if (!apiResponse | totalBills <= 0) {
       textResponse = 'You are all set!, no bills to pay.'
